@@ -1,0 +1,79 @@
+.home_card_ctn {
+    border: 1px solid #D7D7D7;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+    max-width: 29rem;
+    padding: 2rem;
+}
+
+.home_card_img {
+    width: 100%;
+    height: 26rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+}
+
+.home_card_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 200ms ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+}
+
+.home_card_img img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.home_card_img svg {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 2;
+    color: #D7D7D7;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.home_card_info {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.home_card_info div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.home_card_info div:nth-of-type(2) {
+    margin: 1rem 0;
+}
+
+.home_card_stars {
+    color: #A02279;
+    display: flex;
+}
+
+.home_card_stars svg {
+    margin-right: 1rem;
+}
+
+.home_price {
+    font-weight: 600;
+}

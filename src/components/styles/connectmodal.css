@@ -1,0 +1,86 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    width: 90%;
+    max-width: 60rem;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.modal_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    height: 3rem;
+    padding: 3.5rem 3rem;
+    border-bottom: 1px solid #CFD8DC;
+}
+
+.modal_header p {
+    cursor: pointer;
+}
+
+.modal_header h2 {
+   font-size: 24px;
+   margin: 0;
+}
+
+.modal_content {
+    padding: 3rem;
+}
+
+.modal_content p {
+    margin-bottom: 1.5rem;
+}
+
+.modal_content button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border: 1px solid #CFD8DC;
+    padding: 1rem 2rem;
+}
+
+.wallet_name {
+    display: flex;
+    align-items: center;
+}
+.wallet_name p {
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+}
+/* .wallet_name img {
+    object-fit: contain;
+} */
+
+@media screen and (max-width: 350px){
+    .wallet_name p {
+        font-size: 1.6rem;
+    }
+}

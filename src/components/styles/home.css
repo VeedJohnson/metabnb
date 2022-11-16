@@ -1,0 +1,229 @@
+#hero_section, #hero_img_grid {
+    display: flex;
+}
+
+#hero_section {
+    /* min-height: 80vh; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 12rem 0rem 8rem 0rem;
+}
+
+.hero_text_grid {
+    width: 55%;
+    max-width: 63rem;
+    margin-top: -5rem;
+}
+
+#hero_section h1 {
+    font-size: 5.6rem;
+    line-height: 7.8rem;
+    font-weight: 600;
+    color: #434343;
+    margin-bottom: 4rem;
+}
+#hero_section h1 span {
+    font-weight: 700;
+    color: #A02279;
+}
+
+#hero_section p {
+    max-width: 63rem;
+    font-weight: 400;
+    line-height: 3rem;
+    font-size: 2rem;
+    color: #434343;
+}
+
+#hero_img_grid {
+    max-width: 40%;
+}
+
+#hero_img_grid div {
+    width: 50%;
+    max-width: 23.4rem;
+}
+
+#hero_img_grid div img {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+#hero_img_grid div:nth-of-type(1) {
+    margin-top: 10rem;
+    margin-right: 1rem;
+}
+
+.search_wrapper {
+    width: 100%;
+    max-width: 60rem;
+    display: flex;
+    align-items: stretch;
+    height: 5rem;
+    margin-top: 3rem;
+}
+.search_wrapper input {
+    width: 60%;
+    background: rgba(247, 247, 247, 0.1);
+    border: 1px solid #A3A3A3;
+    border-radius: 8px 0px 0px 8px;
+    padding: 2rem;
+}
+.search_wrapper button {
+    width: 40%;
+    background-color: #A02279;
+    color: #fff;
+    border-radius: 0px 8px 8px 0px;
+    -webkit-border-radius: 0px 8px 8px 0px;
+    -moz-border-radius: 0px 8px 8px 0px;
+    -ms-border-radius: 0px 8px 8px 0px;
+    -o-border-radius: 0px 8px 8px 0px;
+}
+
+h2 {
+    font-size: 4.8rem;
+    margin-bottom: 3rem;
+}
+
+#crypto_section {
+    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+    display: flex;
+    justify-content: space-between;
+    height: 7rem;
+    align-items: center;
+    padding: 0rem 10rem;
+}
+
+#crypto_section img {
+    width: 18rem;
+    height: auto;
+}
+
+.homes_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+#homes_list h2 {
+    text-align: center;
+    margin-top: 6rem;
+}
+
+#nfts_container {
+    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+    margin-top: 5rem;
+}
+
+#nfts_container > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 0;
+}
+
+#nfts_container img {
+    width: 90%;
+    float: right;
+}
+
+
+.nft_text {
+    color: #fff;
+}
+
+.nft_text a {
+    display: inline-block;
+    padding: 1.4rem 3rem;
+    background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+    border-radius: 8px;
+    color: #A02279;
+    font-size: 1.6rem;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.nft_text p {
+    max-width: 45rem;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    margin-bottom: 5.5rem;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1100px) {
+    .homes_grid {
+        grid-template-columns: repeat(3, 1fr);
+    } 
+}
+
+@media screen and (min-width: 550px) and (max-width: 799px) {
+    .homes_grid {
+        grid-template-columns: repeat(2, 1fr);
+    } 
+}
+
+@media screen and (max-width: 550px) {
+    .homes_grid {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+}
+
+@media  screen and (max-width: 800px) {
+    #hero_section {
+        display: block;
+    }
+
+    .hero_text_grid {
+        width: 100%;
+    }
+
+    #hero_img_grid {
+        max-width: 100%;
+        margin-top: 4rem;
+        justify-content: center;
+    }
+
+    #crypto_section {
+        padding: 0 3rem;
+    }
+
+    #crypto_section img {
+        width: 10rem;
+    }
+
+    #nfts_container > .container {
+        display: block;
+        text-align: center;
+    }
+    
+    #nfts_container img {
+        float: unset;
+        margin-top: 5rem;
+    }
+
+    .nft_text p {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #hero_section h1 {
+        font-size: 4.2rem;
+        line-height: 6.8rem;
+    }
+    #hero_section p {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 3.8rem;
+    }
+    #crypto_section {
+        padding: 0 2rem;
+    }
+    #crypto_section img {
+        width: 7rem;
+    }
+}
