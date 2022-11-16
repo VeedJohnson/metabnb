@@ -6,6 +6,7 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 
@@ -41,9 +42,4 @@ button {
   width: 90%;
   max-width: 1240px;
   margin: 0 auto;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
